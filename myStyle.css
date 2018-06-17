@@ -1,0 +1,111 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color:white;
+}
+header{
+    height: 100px;
+    margin: 10px;
+}
+header a{
+    text-decoration: none;
+    color: red;
+    line-height: 100px;
+    padding-left: 100px;
+}
+
+nav{
+    margin: 5px;
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+    
+}
+nav ul li{
+    display: inline;
+    letter-spacing: 2px;
+    padding: 0px 5px;
+    /*text-transform: lowercase;   소문자로 바꿔줌*/
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+nav ul li a:hover{
+   color: coral;
+}
+aside#left{
+    float: left;
+    width: 17%;
+    height: 200px;
+    margin: 10px;
+    padding-top: 15px;
+    padding-left: 10px;
+    margin-right: 35px;
+    border: 1px dashed #595959;
+    border-radius: 25px;
+    
+}
+aside#left ul{
+     list-style: none;
+     color: orange;
+}
+aside#left ul li a{
+    text-decoration: none;
+    color:black;
+}
+aside#left ul li a:hover{
+    background: red;
+    display: block;
+}
+aside#left ul li a:active{
+    background: black;
+    color: white;
+    display: block;
+}
+article{
+    float: left;
+    width: 60%;
+}
+#shopcart{
+    margin-bottom: 30px;
+}
+#login{
+    margin-top: 30px;
+}
+footer{
+    clear: both;
+    width: 100%;
+    height: 70px;
+    background-color: #f2f2f2;
+    vertical-align:middle;
+    text-align: center;
+    margin-top: 20px;
+}
+aside#left ul form submit{
+    background-color: greenyellow;
+}
+#id, #pw{
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+#id{
+    margin-left: 18px;
+}
+#submit{
+    background-color: darkorange;
+    border: none;
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
