@@ -2,43 +2,45 @@
 
 <head>
     <title>Insert title here</title>
-    <style>
-        #img {
-            width: 650px;
-            height: 400px;
-            margin-bottom: 20px;
-            margin-left: 300px;
-            margin-top: 10px;
-        }
-
-        #sub {
-            margin-left: 300px;
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        #menu {
-            margin-left: 300px;
-            color: #f76d22;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="myStyle.css">
 </head>
 
 <body>
-    <span id="menu">바삭함과 쫀득함이 같이 있는 돼지바떡!</span> <br>
-    <img src="img/pig/pig_dduck.png" id="img">
-    <img src="img/pig/pig3.jpg" id="img"><br>
-    <div id="sub">
-        달콤함의 끝. 품절대란 돼지바떡을 만나보세요<br>
-    </div>
-    <center>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/L-OBjjcbpkA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </center>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/p-_H1670_l4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <br>
+    <header>
+        <a href="index.html"><img src="img/logo.png"></a>
+    </header>
+    <nav id="top">
+        <ul>
+            <li><a href="full.html">떡/베이커리</a></li>
+            <li><a href="snack.html">스낵/음료</a></li>
+            <li><a href="food.html">조리/냉동</a></li>
+            <li><a href="source.html">스프레드/소스</a></li>
+        </ul>
+    </nav>
+    <a href="source1.html"><img src="img/show/soy1.jpg" id="slide"></a>
+    <aside id="left">
+        <form action="loginProc.html" method="post">
+            <input type="text" id="id" placeholder="ID"> <br>
+            <input type="password" id="pw" placeholder="PW"><br>
+            <input type="submit" value="로그인" id="submit">
+        </form> <br>
+        <a href="join.html">회원가입</a> | 아이디 찾기 <br>
+        <a href="cart.html"><img src="img/cart.png" id="cart"><br>
+            <span #id="cc">장바구니</span></a>
+    </aside>
+    <section>
+        <article>
+            <span id="menu">바삭함과 쫀득함이 같이 있는 돼지바떡!</span> <br>
+            <img src="img/pig/pig_dduck.png" id="img">
+            <img src="img/pig/pig3.jpg" id="img"><br>
+            <div id="sub">
+                달콤함의 끝. 품절대란 돼지바떡을 만나보세요<br>
+            </div>
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/p-_H1670_l4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </center>
+        </article>
+    </section>
 </body>
 
 </html>

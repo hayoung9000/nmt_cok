@@ -1,82 +1,74 @@
 <!doctype html>
 <html>
- <head>
+
+<head>
     <title>콬</title>
-    <link rel="stylesheet" href="cart.css">
-    <style>
-        .box {
-            display: inline-block;
-            background-color: white;
-            width: 340px;
-            margin: 5px;
-        }
 
-        img {
-            width: 340px;
-            height: 300px;
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        span {
-            display: block;
-        }
-
-        #name {
-            font-size: 16px;
-            line-height: 16px;
-            font-weight: 900;
-            color: #404040;
-        }
-
-        #price {
-            font-size: 18px;
-            line-height: 18px;
-            color: #414042;
-            font-weight: 900;
-        }
-
-        a {
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="myStyle.css">
 </head>
 
 <body>
-    <a href="full1.html">
-        <div class="box">
-            <img src="img/bread1.jpg" width="100" height="100">
-            <span id="name">부드러운 롤케이크 </span>
-            <span id="price">8000원</span>
-        </div>
-    </a>
-    <a href="full2.html">
-        <div class="box">
-            <img src="img/rice1.jpg" width="100" height="100">
-            <span id="name">부산의 명물 앙꼬 절편 </span>
-            <span id="price">2000원</span>
-        </div>
-    </a>
-    <a href="full3.html">
-        <div class="box">
-            <img src="img/pig/full.png" width="100" height="100">
-            <span id="name">신개념떡! 돼지바떡 </span>
-            <span id="price">4500원</span>
-        </div>
-    </a>
-    <a href="full4.html">
-        <div class="box">
-            <img src="img/soboro/full.png" width="100" height="100">
-            <span id="name">포근한 소보로떡</span>
-            <span id="price">4500원</span>
-        </div>
-    </a>
-<a href="full5.html">
-        <div class="box">
-            <img src="img/bread/menu.png" width="100" height="100">
-            <span id="name">56겹의 쫄깃한 식빵</span>
-            <span id="price">9900원</span>
-        </div>
-    </a>
+    <header>
+        <a href="index.html"><img src="img/logo.png"></a>
+    </header>
+    <nav id="top">
+        <ul>
+            <li><a href="full.html">떡/베이커리</a></li>
+            <li><a href="snack.html">스낵/음료</a></li>
+            <li><a href="food.html">조리/냉동</a></li>
+            <li><a href="source.html">스프레드/소스</a></li>
+        </ul>
+    </nav>
+    <a href="source1.html"><img src="img/show/pig1.jpg" id="slide"></a>
+    <aside id="left">
+        <form action="loginProc.html" method="post">
+            <input type="text" id="id" placeholder="ID"> <br>
+            <input type="password" id="pw" placeholder="PW"><br>
+            <input type="submit" value="로그인" id="submit">
+        </form> <br>
+        <a href="join.html">회원가입</a> | 아이디 찾기 <br>
+        <a href="cart.html"><img src="img/cart.png" id="cart"><br>
+            <span #id="cc">장바구니</span></a>
+    </aside>
+    <section>
+        <article>
+            <a href="full1.html">
+                <div class="box">
+                    <img src="img/bread1.jpg" width="100" height="100" id="img_box">
+                    <span id="name">부드러운 롤케이크 </span>
+                    <span id="price">8000원</span>
+                </div>
+            </a>
+            <a href="full2.html">
+                <div class="box">
+                    <img src="img/rice1.jpg" width="100" height="100" id=img_box>
+                    <span id="name">부산의 명물 앙꼬 절편 </span>
+                    <span id="price">2000원</span>
+                </div>
+            </a>
+            <a href="full3.html">
+                <div class="box">
+                    <img src="img/pig/full.png" width="100" height="100" id=img_box>
+                    <span id="name">신개념떡! 돼지바떡 </span>
+                    <span id="price">4500원</span>
+                </div>
+            </a>
+            <a href="full4.html">
+                <div class="box">
+                    <img src="img/soboro/full.png" width="100" height="100" id=img_box>
+                    <span id="name">포근한 소보로떡</span>
+                    <span id="price">4500원</span>
+                </div>
+            </a>
+            <a href="full5.html">
+                <div class="box">
+                    <img src="img/bread/menu.png" width="100" height="100" id=img_box>
+                    <span id="name">56겹의 쫄깃한 식빵</span>
+                    <span id="price">9900원</span>
+                </div>
+            </a>
+        </article>
+    </section>
 </body>
+
 </html>

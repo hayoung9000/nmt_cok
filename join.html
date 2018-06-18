@@ -5,58 +5,119 @@
     <title>콬</title>
     <style>
         body {
-            background-color: black;
+            position: relative;
+            background-color: #f5f6f7;
         }
-
-        input {
-            padding: 13px 0 13px 10px;
-            height: 22px;
-            font-size: 14px;
-            width: 228px;
-            border-radius: 3px;
-            border: solid 1px #dddddd;
-            margin-bottom: 20px;
+        #joinForm{
+            margin-top: 40px;
         }
-
-        #box {
-            border-radius: 15px;
-            border: solid 1px white;
-            background-color: white;
-            width: 290px;
-            height: 300px;
-            padding-left: 0px;
-            margin-top: 200px;
-            padding-top: 15px;
-        }
-
-        #submit {
-            background-color: orange;
-            height: 58px;
-            width: 240px;
-            border: none;
-            color: white;
-        }
-
-        #s {
+        select {
+            font-family: 돋움;
+            font-size: 13px;
             font-weight: bold;
-            font-size: 16px;
+            border-width: 0px;
+            width: 80px;
+            color: #000000;
+        }
+
+        table {
+            font-family: 돋움;
+            font-size: 14px;
+            border-color: #dedede;
+            background-color: #ffffff;
+            border-width: 1px;
+            border-style: solid;
+            border-collapse: collapse;
+        }
+
+        #join {
+            border-width: 0px;
+            margin: 5px;
+            height: 30px;
+        }
+
+
+        .bb {
+            width: 460px;
+            height: 50px;
+            padding: 15px;
+            background-color: darkorange;
+            color: #ffffff;
+            font-size: 19px;
+            margin-bottom: 10px;
+            border: none;
         }
     </style>
+    <link rel="stylesheet" href="myStyle.css">
 </head>
 
 <body>
+    <header>
+        <a href="index.html"><img src="img/logo.png"></a>
+    </header>
+    <nav id="top">
+        <ul>
+            <li><a href="full.html">떡/베이커리</a></li>
+            <li><a href="snack.html">스낵/음료</a></li>
+            <li><a href="food.html">조리/냉동</a></li>
+            <li><a href="source.html">스프레드/소스</a></li>
+        </ul>
+    </nav>
     <center>
-        <span id="s">회원가입</span>
-        <div id="box">
-            
-            <form>
-                <input type="text" id="id" placeholder="ID"> <br>
-                <input type="password" id="pw" placeholder="PW"><br>
-                <input type="text" id="address" placeholder="주소"><br>
-
-                <input type="submit" value="회원가입" id="submit">
-            </form>
-        </div>
+        <form action="joinProc.html" id="joinForm">
+            <table align="center" border="1" cellpadding="3" cellspacing="0" width="460" height="160">
+                <tr>
+                    <td><input type="text" name="id" placeholder="아이디" size="47" required id="join">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="pw" placeholder="비밀번호" size="55" required id="join">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="rpw" placeholder="비밀번호 재확인" size="55" required id="join">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table align="center" border="1" cellpadding="3" cellspacing="0" width="460" height="240">
+                <tr>
+                    <td colspan="4"><input type="text" name="name" placeholder="이름" size="60" required id="join"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="text" name="rpw" placeholder="주소" size="60" required id="join"></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#f0f0f0" align="center">생일</td>
+                    <td><input type="text" maxlength="4" placeholder="년(4자)" name="year" size="10" required id="join"></td>
+                    <td><select name="month">
+		<option value="월">월
+		<option value="1">1
+		<option value="2">2
+		<option value="3">3
+		<option value="4">4
+		<option value="5">5
+		<option value="6">6
+		<option value="7">7
+		<option value="8">8
+		<option value="9">9
+		<option value="10">10
+		<option value="11">11
+		<option value="12">12
+	     </select>
+                    </td>
+                    <td><input type="text" name="day" maxlength="4" placeholder="일" size="10" required id="join">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><input type="email" name="email" placeholder="본인확인 이메일(선택)" size="60" id="join">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" class="bb" value="∨가입하기">
+            <br>
+        </form>
     </center>
 </body>
 

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+
+ <style>
+ body{
+ position:relative;
+ background-color:#f5f6f7;
+ }
+ body,button,input,table{
+	   font-family:돋움;
+	   font-size:14px;
+	   }
+select{font-family:돋움;
+	   font-size:13px;
+	   font-weight:bold;
+	   border-width:0px;
+	   width:80px;
+	   color:#000000;
+	   }
+
+ table{border-color:#dedede;
+	   background-color:#ffffff;
+	   border-width:1px;
+	   border-style:solid;
+	   border-collapse:collapse;
+	   }
+ input{border-width:0px;
+		margin:5px;
+		height:30px;
+ }
+ button{background-color:#ffffff;
+		border-color:#dedede;
+		border-width:1px;
+		color: #dedede;
+		width:150px;
+		padding: 10px;
+		border-style:solid;
+		}
+.a{border-right:0px}
+.b{background-color:#ffffff;
+   border-color:#dedede;
+   border-width:1px;
+   border-style:solid;
+   padding:10px;
+   width:90px;
+}
+.bb{width:460px;
+	height:50px;
+	padding:15px;
+	background-color:#00aa00;
+	color:#ffffff;
+	font-size:19px;
+	}
+.m{margin:60px;
+}
+#i{
+	margin:15px 10px;
+	width:17px;
+	height:20px;
+}
+	</style>
+  </head>
+ <body>
+ <center><img src="img/naver.png" class="m"></img></center>
+  <table align="center" border="1" cellpadding="3" cellspacing="0" width="460" height="160">
+	<tr>
+		<td><input type="text" name="id" placeholder="아이디" size="47" required></input><font color="#9f9f9f"> @naver.com</font></td>
+	</tr>
+	<tr>
+		<td ><input type="password" name="pw" placeholder="비밀번호" size="55" required></input><img src="img/lock.png" id="i" align="right" valign="middile"></img>
+		</td>
+	</tr>
+	<tr>
+		<td><input type="password" name="rpw" placeholder="비밀번호 재확인" size="55" required></input><img src="img/check.png" id="i" align="right" valign="middile"></img>
+		</td>
+	</tr>
+  </table>
+  <br/>
+  <table align="center" border="1" cellpadding="3" cellspacing="0" width="460" height="240">
+	<tr>
+		<td colspan="4"><input type="text" name="name" placeholder="이름" size="60" required></input></td>
+	</tr>
+	 <tr>
+		<td align="center" colspan="4"><button type="button" name="남자" class="a">남자</button><button type="button" name="남자">여자</button></td>
+	</tr>
+	<tr>
+		<td colspan="4"><input type="password" name="rpw" placeholder="비밀번호 재확인" size="60" required></input></td>
+	 </tr>
+	<tr>
+		<td bgcolor="#f0f0f0" align="center">생일</td>
+	<td><input type="text" maxlength="4" placeholder="년(4자)" name="year" size="10" required></input></td>
+	 <td><select name="month">
+		<option value="월">월
+		<option value="1">1
+		<option value="2">2
+		<option value="3">3
+		<option value="4">4
+		<option value="5">5
+		<option value="6">6
+		<option value="7">7
+		<option value="8">8
+		<option value="9">9
+		<option value="10">10
+		<option value="11">11
+		<option value="12">12
+	     </select>
+		</td>
+		<td><input type="text" name="day" maxlength="4" placeholder="일" size="10" required></input></td>
+	</tr>
+	<tr>
+		<td colspan="4"><input type="email" name="email" placeholder="본인확인 이메일(선택)" size="60"></input></td>
+	</tr>
+  </table>
+  <br/>
+  <table align="center" width="460" height="120" border="1" cellpadding="3" cellspacing="0">
+	<tr>
+		<td><select name="ph">
+		<option value="82">+82
+		</select>
+		</td>
+		<td><input type="text" maxlength="16" name="number" placeholder="휴대전화번호" required size="32">
+		<input type="button" name="인증" value="인증"  class="b"></input></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="text" name="num" maxlength="6" placeholder="인증번호" required size="46"></input><input type="button" name="확인" value="확인" class="b"></input></td>
+	</tr>
+ </table>
+ <br/><br/><br/>
+ <center><input type="button" class="bb" value="∨가입하기"></input></center> <br/><br/>
+ </body>
+</html>

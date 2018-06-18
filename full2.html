@@ -1,40 +1,45 @@
 <html>
 <head>
-<title>Insert title here</title>
-<style>
-	#img{
-		width:650px;
-		height: 400px;
-		margin-bottom: 20px;
-		margin-left:300px;
-		margin-top:10px;
-	}
-	#sub{
-		margin-left:300px;
-    	font-weight: bold;
-   		font-size: 16px;
-        margin-bottom: 5px;
-	}
-	#menu{
-	margin-left:300px;
-	color: #f76d22;
-    font-weight: bold;
-    font-size: 20px;
-    }
-
-</style>
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="myStyle.css">
 </head>
+
 <body>
-<span id="menu">SNS 화제의 중심! 앙꼬 절편</span> <br>
-<img src="img/rice2.jpg" id="img">
-<img src="img/rice3.jpg" id="img"><br>
-<div id="sub">
-	줄 서서 먹는 떡 이제는 집에서 편하게 드세요~<br>
-</div>
-    <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pi6ax5O-wn4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="video"></iframe>
-        </center>
-<br>
+    <header>
+        <a href="index.html"><img src="img/logo.png"></a>
+    </header>
+    <nav id="top">
+        <ul>
+            <li><a href="full.html">떡/베이커리</a></li>
+            <li><a href="snack.html">스낵/음료</a></li>
+            <li><a href="food.html">조리/냉동</a></li>
+            <li><a href="source.html">스프레드/소스</a></li>
+        </ul>
+    </nav>
+    <a href="source1.html"><img src="img/show/soy1.jpg" id="slide"></a>
+    <aside id="left">
+        <form action="loginProc.html" method="post">
+            <input type="text" id="id" placeholder="ID"> <br>
+            <input type="password" id="pw" placeholder="PW"><br>
+            <input type="submit" value="로그인" id="submit">
+        </form> <br>
+        <a href="join.html">회원가입</a> | 아이디 찾기 <br>
+        <a href="cart.html"><img src="img/cart.png" id="cart"><br>
+            <span #id="cc">장바구니</span></a>
+    </aside>
+    <section>
+        <article>
+            <span id="menu">SNS 화제의 중심! 앙꼬 절편</span> <br>
+            <img src="img/rice2.jpg" id="img">
+            <img src="img/rice3.jpg" id="img"><br>
+            <div id="sub">
+                줄 서서 먹는 떡 이제는 집에서 편하게 드세요~<br>
+            </div>
+            <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pi6ax5O-wn4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="video"></iframe>
+            </center>
+        </article>
+    </section>
 </body>
 </html>
 
